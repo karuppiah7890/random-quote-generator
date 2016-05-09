@@ -4,19 +4,33 @@
     <meta charset="utf-8">
     <title>Random Quotes</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="index.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
   </head>
 
   <body>
     <div class="container-fluid">
-        <div class="quotes">
+
+        <div class="quote-box">
+
             <blockquote>
-            <p id="quote"><footer><cite id="author" title="Source : forismatic.com/en"></cite></footer>
+            <p id="quote" class="text-center"></p><footer class="text-right"><cite id="author" title="Quote Source : forismatic.com/en"></cite></footer>
             </blockquote>
-          <a id="tweet-link" href="#">Tweet this</a>
+
+          <div class="row">
+            <div class="col-md-2 col-md-offset-1">
+                <a id="tweet-link" href="#" class="btn btn-sm bg-primary"><i style="color:#FFF;" class="fa fa-twitter fa-2x"></i></a>
+            </div>
+
+            <div class="col-md-3 col-md-offset-5">
+                <span class="text-right"><button id="newQuote" class="btn btn-primary">New Quote</button></span>
+            </div>
+          </div>
+
         </div>
+
     </div>
+    <script src="index.js" type="text/javascript"></script>
   </body>
-  <script src="index.js"></script>
 </html>
